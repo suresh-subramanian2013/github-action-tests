@@ -8,6 +8,10 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions/greet
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run greet action
+        uses: ./.github/actions/greet
         with:
           name: 'Chennai Dev'
