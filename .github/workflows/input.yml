@@ -1,7 +1,7 @@
 name: Manual Trigger Workflow
 
 on:
-  workflow_dispatch:
+  workflow_dispatchs:
     inputs:
       environment:
         description: 'Deployment environment'
